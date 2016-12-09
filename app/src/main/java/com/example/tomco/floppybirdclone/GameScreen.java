@@ -6,7 +6,7 @@ import com.example.tomco.floppybirdclone.framework.Game;
 import com.example.tomco.floppybirdclone.framework.Graphics;
 import com.example.tomco.floppybirdclone.framework.Input;
 import com.example.tomco.floppybirdclone.framework.Screen;
-import com.example.tomco.floppybirdclone.framework.android.AndroidGraphics;
+import com.example.tomco.floppybirdclone.items.Background;
 import com.example.tomco.floppybirdclone.items.Border;
 import com.example.tomco.floppybirdclone.items.Player;
 import com.example.tomco.floppybirdclone.items.Wall;
@@ -20,13 +20,16 @@ public class GameScreen extends Screen {
     private Border floor;
     private Border roof;
     private WallManager walls;
+    private Background background;
 
     public GameScreen(Game game) {
         super(game);
-        player = new Player(new Vector2(20, 20));
-        floor = new Border(new Vector2(0, game.getGraphics().getHeight() - 10));
-        roof = new Border(new Vector2(0, 0));
-        walls = new WallManager(game);
+        this.player = new Player(new Vector2(20, 20));
+        this.floor = new Border(new Vector2(0, game.getGraphics().getHeight() - 10));
+        this.roof = new Border(new Vector2(0, 0));
+        this.walls = new WallManager(game);
+        this.background = new Background(new Vector2(0, 0));
+
         Assets.load(game);
     }
 
@@ -35,6 +38,7 @@ public class GameScreen extends Screen {
         checkColision();
         handleTouch();
 
+        background.update();
         walls.update();
 
         player.applyForce(Forces.GRAVITY);
@@ -71,7 +75,8 @@ public class GameScreen extends Screen {
         Graphics graphics = game.getGraphics();
 
         graphics.clearScreen(Color.BLACK);
-        ((AndroidGraphics) graphics).drawScaledFullScreen(Assets.BACKGROUND);
+
+        background.draw(graphics);
 
         floor.draw(graphics);
         player.draw(graphics);
