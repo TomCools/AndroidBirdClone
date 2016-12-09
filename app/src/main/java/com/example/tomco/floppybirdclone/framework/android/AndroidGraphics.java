@@ -1,10 +1,5 @@
 package com.example.tomco.floppybirdclone.framework.android;
 
-import com.example.tomco.floppybirdclone.framework.Graphics;
-import com.example.tomco.floppybirdclone.framework.Image;
-
-import java.io.IOException;
-import java.io.InputStream;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
@@ -14,6 +9,12 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Rect;
+
+import com.example.tomco.floppybirdclone.framework.Graphics;
+import com.example.tomco.floppybirdclone.framework.Image;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class AndroidGraphics implements Graphics {
     AssetManager assets;
@@ -101,7 +102,7 @@ public class AndroidGraphics implements Graphics {
     }
 
     @Override
-    public void drawString(String text, int x, int y, Paint paint){
+    public void drawString(String text, int x, int y, Paint paint) {
         canvas.drawText(text, x, y, paint);
 
 
@@ -127,27 +128,22 @@ public class AndroidGraphics implements Graphics {
 
     @Override
     public void drawImage(Image Image, int x, int y) {
-        canvas.drawBitmap(((AndroidImage)Image).bitmap, x, y, null);
+        canvas.drawBitmap(((AndroidImage) Image).bitmap, x, y, null);
     }
 
-    public void drawScaledImage(Image Image, int x, int y, int width, int height, int srcX, int srcY, int srcWidth, int srcHeight){
-
-
-        srcRect.left = srcX;
-        srcRect.top = srcY;
-        srcRect.right = srcX + srcWidth;
-        srcRect.bottom = srcY + srcHeight;
-
-
+    public void drawScaledImage(Image Image, int x, int y, int width, int height) {
         dstRect.left = x;
         dstRect.top = y;
         dstRect.right = x + width;
         dstRect.bottom = y + height;
 
 
+        canvas.drawBitmap(((AndroidImage) Image).bitmap, null, dstRect, null);
 
-        canvas.drawBitmap(((AndroidImage) Image).bitmap, srcRect, dstRect, null);
+    }
 
+    public void drawScaledFullScreen(Image image) {
+        this.drawScaledImage(image, 0, 0, getWidth(), getHeight());
     }
 
     @Override

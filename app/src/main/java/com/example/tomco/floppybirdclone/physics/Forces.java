@@ -5,8 +5,8 @@ package com.example.tomco.floppybirdclone.physics;
  */
 
 public class Forces {
-    public static Vector2 GRAVITY = new Vector2(0, 0.3f);
-    public static Vector2 JUMP = new Vector2(0, -8f);
+    public static Vector2 GRAVITY = new Vector2(0, 0.5f);
+    public static Vector2 JUMP = new Vector2(0, -10f);
     public static Vector2 PULL_WALL = new Vector2(-1f, 0);
 
 }

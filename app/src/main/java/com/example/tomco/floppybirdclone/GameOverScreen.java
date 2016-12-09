@@ -1,12 +1,10 @@
 package com.example.tomco.floppybirdclone;
 
-import android.graphics.Color;
-import android.graphics.Paint;
-
 import com.example.tomco.floppybirdclone.framework.Game;
 import com.example.tomco.floppybirdclone.framework.Graphics;
 import com.example.tomco.floppybirdclone.framework.Input;
 import com.example.tomco.floppybirdclone.framework.Screen;
+import com.example.tomco.floppybirdclone.framework.android.AndroidGraphics;
 
 import java.util.List;
 
@@ -27,12 +25,7 @@ public class GameOverScreen extends Screen {
     @Override
     public void paint(float deltaTime) {
         Graphics g = game.getGraphics();
-        g.clearScreen(Color.BLACK);
-
-        Paint paint = new Paint();
-        paint.setColor(Color.MAGENTA);
-        paint.setTextSize(60);
-        g.drawString("GAME OVER", g.getWidth() / 2, g.getHeight() / 2, paint);
+        ((AndroidGraphics) g).drawScaledFullScreen(Assets.GAME_OVER);
     }
 
     @Override

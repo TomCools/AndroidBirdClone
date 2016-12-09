@@ -6,8 +6,9 @@ import com.example.tomco.floppybirdclone.framework.Game;
 import com.example.tomco.floppybirdclone.framework.Graphics;
 import com.example.tomco.floppybirdclone.framework.Input;
 import com.example.tomco.floppybirdclone.framework.Screen;
-import com.example.tomco.floppybirdclone.items.Player;
+import com.example.tomco.floppybirdclone.framework.android.AndroidGraphics;
 import com.example.tomco.floppybirdclone.items.Border;
+import com.example.tomco.floppybirdclone.items.Player;
 import com.example.tomco.floppybirdclone.items.Wall;
 import com.example.tomco.floppybirdclone.physics.Forces;
 import com.example.tomco.floppybirdclone.physics.Vector2;
@@ -22,10 +23,11 @@ public class GameScreen extends Screen {
 
     public GameScreen(Game game) {
         super(game);
-        player = new Player(new Vector2(20, 20), Color.GREEN);
+        player = new Player(new Vector2(20, 20));
         floor = new Border(new Vector2(0, game.getGraphics().getHeight() - 10));
         roof = new Border(new Vector2(0, 0));
         walls = new WallManager(game);
+        Assets.load(game);
     }
 
     @Override
@@ -67,7 +69,9 @@ public class GameScreen extends Screen {
     @Override
     public void paint(float deltaTime) {
         Graphics graphics = game.getGraphics();
+
         graphics.clearScreen(Color.BLACK);
+        ((AndroidGraphics) graphics).drawScaledFullScreen(Assets.BACKGROUND);
 
         floor.draw(graphics);
         player.draw(graphics);

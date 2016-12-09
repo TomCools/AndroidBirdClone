@@ -40,7 +40,7 @@ public class Wall extends Drawable implements Collisionable {
     }
 
     private void drawBox(Graphics g, BoundingBox box) {
-        g.drawRect(box.getX(), box.getY(), box.getWidth(), box.getHeight(), Color.CYAN);
+        g.drawRect(box.getX(), box.getY(), box.getWidth(), box.getHeight(), Color.MAGENTA);
     }
 
     @Override
