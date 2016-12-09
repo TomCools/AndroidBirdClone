@@ -15,14 +15,14 @@ import com.example.tomco.floppybirdclone.physics.Vector2;
 
 import java.util.List;
 
-public class GameScreen extends Screen {
+public class FloppyScreen extends Screen {
     private Player player;
     private Border floor;
     private Border roof;
     private WallManager walls;
     private Background background;
 
-    public GameScreen(Game game) {
+    public FloppyScreen(Game game) {
         super(game);
         this.player = new Player(new Vector2(20, 20));
         this.floor = new Border(new Vector2(0, game.getGraphics().getHeight() - 10));

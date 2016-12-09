@@ -18,7 +18,7 @@ public class GameOverScreen extends Screen {
         List<Input.TouchEvent> events = game.getInput().getTouchEvents();
 
         if (!events.isEmpty()) {
-            game.setScreen(new GameScreen(game));
+            game.setScreen(new FloppyScreen(game));
         }
     }
 
