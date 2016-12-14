@@ -1,5 +1,6 @@
 package com.example.tomco.floppybirdclone;
 
+import com.example.tomco.floppybirdclone.experiments.BlockPullTest;
 import com.example.tomco.floppybirdclone.framework.Screen;
 import com.example.tomco.floppybirdclone.framework.android.AndroidGame;
 
@@ -7,6 +8,6 @@ import com.example.tomco.floppybirdclone.framework.android.AndroidGame;
 public class SampleGame extends AndroidGame {
     @Override
     public Screen getInitScreen() {
-        return new FloppyScreen(this);
+        return new BlockPullTest(this);
     }
 }
