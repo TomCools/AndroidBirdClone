@@ -2,10 +2,6 @@ package com.example.tomco.floppybirdclone.physics;
 
 import com.example.tomco.floppybirdclone.framework.Graphics;
 
-/**
- * Created by tomco on 6/12/2016.
- */
-
 public abstract class Drawable {
     protected Vector2 location;
     protected Vector2 velocity;

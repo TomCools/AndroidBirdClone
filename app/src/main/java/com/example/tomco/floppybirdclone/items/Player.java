@@ -1,5 +1,7 @@
 package com.example.tomco.floppybirdclone.items;
 
+import android.graphics.Color;
+
 import com.example.tomco.floppybirdclone.Assets;
 import com.example.tomco.floppybirdclone.framework.Graphics;
 import com.example.tomco.floppybirdclone.framework.android.AndroidGraphics;
@@ -16,13 +18,13 @@ public class Player extends Drawable {
 
     public Player(Vector2 location) {
         super(location);
-        this.size = 100;
+        this.size = 75;
     }
 
     @Override
     public void draw(Graphics g) {
-        ((AndroidGraphics) g).drawScaledImage(Assets.DOGE, location.getX(), location.getY(), size, size);
-        //g.drawRect(location.getX(), location.getY(), size, size, color);
+        g.drawRect(location.getX(), location.getY(), size, size, Color.DKGRAY);
+        ((AndroidGraphics) g).drawScaledImage(Assets.TOTZ, location.getX(), location.getY(), size, size);
     }
 
     public boolean collidesWith(Collisionable collisionable) {

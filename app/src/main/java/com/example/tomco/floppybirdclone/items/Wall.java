@@ -13,9 +13,9 @@ import java.util.Collection;
 
 public class Wall extends Drawable implements Collisionable {
 
-    private int WALL_WIDTH = 10;
+    private int WALL_WIDTH = 30;
     private int WALL_HEIGHT = 3000;
-    private int GAP_SIZE = 200;
+    private int GAP_SIZE = 300;
     private int WALL_SPEED_LIMIT = 3;
 
     private Collection<BoundingBox> hitBoxes;
@@ -40,7 +40,7 @@ public class Wall extends Drawable implements Collisionable {
     }
 
     private void drawBox(Graphics g, BoundingBox box) {
-        g.drawRect(box.getX(), box.getY(), box.getWidth(), box.getHeight(), Color.MAGENTA);
+        g.drawRect(box.getX(), box.getY(), box.getWidth(), box.getHeight(), Color.GREEN);
     }
 
     @Override

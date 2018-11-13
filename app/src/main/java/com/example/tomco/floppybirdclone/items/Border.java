@@ -21,7 +21,7 @@ public class Border extends Drawable implements Collisionable {
 
     @Override
     public void draw(Graphics g) {
-        g.drawRect(location.getX(), location.getY(), g.getWidth(), HEIGHT, Color.RED);
+        g.drawRect(location.getX(), location.getY(), g.getWidth(), HEIGHT, Color.GRAY);
     }
 
     @Override

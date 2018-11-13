@@ -8,6 +8,6 @@ import com.example.tomco.floppybirdclone.framework.android.AndroidGame;
 public class SampleGame extends AndroidGame {
     @Override
     public Screen getInitScreen() {
-        return new BlockPullTest(this);
+        return new FloppyScreen(this);
     }
 }
