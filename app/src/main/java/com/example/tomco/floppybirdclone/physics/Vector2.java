@@ -1,9 +1,5 @@
 package com.example.tomco.floppybirdclone.physics;
 
-/**
- * Created by tomco on 6/12/2016.
- */
-
 public class Vector2 {
     float x;
     float y;
@@ -11,6 +7,10 @@ public class Vector2 {
     public Vector2(float x, float y) {
         this.x = x;
         this.y = y;
+    }
+
+    Vector2 copy() {
+        return new Vector2(x,y);
     }
 
     void add(Vector2 v) {
