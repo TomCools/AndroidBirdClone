@@ -1,9 +1,9 @@
-package com.example.tomco.floppybirdclone.framework.android;
+package com.example.tomco.floppybirdclone.framework.gameloop.android;
 
 import android.graphics.Bitmap;
 
-import com.example.tomco.floppybirdclone.framework.Graphics;
-import com.example.tomco.floppybirdclone.framework.Image;
+import com.example.tomco.floppybirdclone.framework.gameloop.Graphics;
+import com.example.tomco.floppybirdclone.framework.gameloop.Image;
 
 public class AndroidImage implements Image {
     Bitmap bitmap;

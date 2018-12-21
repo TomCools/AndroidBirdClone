@@ -1,8 +1,8 @@
-package com.example.tomco.floppybirdclone.framework.android;
+package com.example.tomco.floppybirdclone.framework.gameloop.android;
 
 import android.media.SoundPool;
 
-import com.example.tomco.floppybirdclone.framework.Sound;
+import com.example.tomco.floppybirdclone.framework.gameloop.Sound;
 
 /**
  * Created by tomco on 6/12/2016.

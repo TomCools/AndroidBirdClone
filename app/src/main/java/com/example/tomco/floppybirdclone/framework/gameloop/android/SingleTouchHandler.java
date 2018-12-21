@@ -1,10 +1,10 @@
-package com.example.tomco.floppybirdclone.framework.android;
+package com.example.tomco.floppybirdclone.framework.gameloop.android;
 
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.example.tomco.floppybirdclone.framework.Input;
-import com.example.tomco.floppybirdclone.framework.Pool;
+import com.example.tomco.floppybirdclone.framework.gameloop.Input;
+import com.example.tomco.floppybirdclone.framework.gameloop.Pool;
 
 import java.util.ArrayList;
 import java.util.List;

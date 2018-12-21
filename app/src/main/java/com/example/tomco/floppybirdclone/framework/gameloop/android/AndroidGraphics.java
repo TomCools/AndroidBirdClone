@@ -1,4 +1,4 @@
-package com.example.tomco.floppybirdclone.framework.android;
+package com.example.tomco.floppybirdclone.framework.gameloop.android;
 
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
@@ -10,8 +10,8 @@ import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Rect;
 
-import com.example.tomco.floppybirdclone.framework.Graphics;
-import com.example.tomco.floppybirdclone.framework.Image;
+import com.example.tomco.floppybirdclone.framework.gameloop.Graphics;
+import com.example.tomco.floppybirdclone.framework.gameloop.Image;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,8 +1,7 @@
 package com.example.tomco.floppybirdclone;
 
-import com.example.tomco.floppybirdclone.experiments.BlockPullTest;
-import com.example.tomco.floppybirdclone.framework.Screen;
-import com.example.tomco.floppybirdclone.framework.android.AndroidGame;
+import com.example.tomco.floppybirdclone.framework.gameloop.Screen;
+import com.example.tomco.floppybirdclone.framework.gameloop.android.AndroidGame;
 
 
 public class SampleGame extends AndroidGame {

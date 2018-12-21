@@ -1,9 +1,9 @@
 package com.example.tomco.floppybirdclone;
 
-import com.example.tomco.floppybirdclone.framework.Game;
+import com.example.tomco.floppybirdclone.framework.gameloop.Game;
 import com.example.tomco.floppybirdclone.items.Wall;
-import com.example.tomco.floppybirdclone.physics.Forces;
-import com.example.tomco.floppybirdclone.physics.Vector2;
+import com.example.tomco.floppybirdclone.framework.physics.Forces;
+import com.example.tomco.floppybirdclone.framework.physics.Vector2;
 
 import java.util.ArrayList;
 import java.util.List;

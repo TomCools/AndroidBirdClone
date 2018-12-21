@@ -1,20 +1,31 @@
-package com.example.tomco.floppybirdclone.physics;
+package com.example.tomco.floppybirdclone.framework.physics;
 
-import com.example.tomco.floppybirdclone.framework.Graphics;
+import com.example.tomco.floppybirdclone.framework.gameloop.Graphics;
 
 public abstract class Drawable {
+    private static final float DEFAULT_MASS = 1;
+
     protected Vector2 location;
     protected Vector2 velocity;
     protected Vector2 acceleration;
+    private final float mass;
 
     public Drawable(Vector2 location) {
+        this(location, DEFAULT_MASS);
+    }
+
+    public Drawable(Vector2 location, float mass) {
         this.location = location;
         this.velocity = new Vector2(0, 0);
         this.acceleration = new Vector2(0, 0);
+        this.mass = mass;
     }
 
     public void applyForce(Vector2 force) {
-        acceleration.add(force);
+        // Copy, because else, you are changing the original force! :s
+        Vector2 forceCopy = force.copy();
+        forceCopy.div(mass);
+        acceleration.add(forceCopy);
     }
 
     public void update() {

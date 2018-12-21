@@ -1,4 +1,4 @@
-package com.example.tomco.floppybirdclone.framework.android;
+package com.example.tomco.floppybirdclone.framework.gameloop.android;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

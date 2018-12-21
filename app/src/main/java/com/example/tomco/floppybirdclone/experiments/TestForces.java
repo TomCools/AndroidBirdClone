@@ -1,6 +1,6 @@
 package com.example.tomco.floppybirdclone.experiments;
 
-import com.example.tomco.floppybirdclone.physics.Vector2;
+import com.example.tomco.floppybirdclone.framework.physics.Vector2;
 
 /**
  * Created by tomco on 9/12/2016.

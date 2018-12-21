@@ -1,4 +1,4 @@
-package com.example.tomco.floppybirdclone.physics;
+package com.example.tomco.floppybirdclone.framework.physics;
 
 /**
  * Created by tomco on 6/12/2016.

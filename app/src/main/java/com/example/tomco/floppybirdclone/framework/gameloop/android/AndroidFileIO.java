@@ -1,4 +1,4 @@
-package com.example.tomco.floppybirdclone.framework.android;
+package com.example.tomco.floppybirdclone.framework.gameloop.android;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -6,7 +6,7 @@ import android.content.res.AssetManager;
 import android.os.Environment;
 import android.preference.PreferenceManager;
 
-import com.example.tomco.floppybirdclone.framework.FileIO;
+import com.example.tomco.floppybirdclone.framework.gameloop.FileIO;
 
 import java.io.File;
 import java.io.FileInputStream;

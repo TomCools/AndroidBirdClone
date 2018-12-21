@@ -1,8 +1,8 @@
-package com.example.tomco.floppybirdclone.physics;
+package com.example.tomco.floppybirdclone.framework.physics;
 
 public class Vector2 {
-    float x;
-    float y;
+    private float x;
+    private float y;
 
     public Vector2(float x, float y) {
         this.x = x;

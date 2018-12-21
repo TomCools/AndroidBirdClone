@@ -1,8 +1,8 @@
 package com.example.tomco.floppybirdclone;
 
-import com.example.tomco.floppybirdclone.framework.Game;
-import com.example.tomco.floppybirdclone.framework.Graphics;
-import com.example.tomco.floppybirdclone.framework.Image;
+import com.example.tomco.floppybirdclone.framework.gameloop.Game;
+import com.example.tomco.floppybirdclone.framework.gameloop.Graphics;
+import com.example.tomco.floppybirdclone.framework.gameloop.Image;
 
 /**
  * Created by tomco on 8/12/2016.

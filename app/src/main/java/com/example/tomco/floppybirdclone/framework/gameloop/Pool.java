@@ -1,4 +1,4 @@
-package com.example.tomco.floppybirdclone.framework;
+package com.example.tomco.floppybirdclone.framework.gameloop;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.tomco.floppybirdclone.framework;
+package com.example.tomco.floppybirdclone.framework.gameloop;
 
 public interface Audio {
     public Music createMusic(String file);

@@ -1,8 +1,8 @@
 package com.example.tomco.floppybirdclone.items;
 
-import com.example.tomco.floppybirdclone.framework.Graphics;
-import com.example.tomco.floppybirdclone.physics.Drawable;
-import com.example.tomco.floppybirdclone.physics.Vector2;
+import com.example.tomco.floppybirdclone.framework.gameloop.Graphics;
+import com.example.tomco.floppybirdclone.framework.physics.Drawable;
+import com.example.tomco.floppybirdclone.framework.physics.Vector2;
 
 
 public class Block extends Drawable {

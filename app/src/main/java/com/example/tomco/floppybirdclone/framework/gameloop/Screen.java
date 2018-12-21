@@ -1,4 +1,4 @@
-package com.example.tomco.floppybirdclone.framework;
+package com.example.tomco.floppybirdclone.framework.gameloop;
 
 /**
  * Created by tomco on 6/12/2016.

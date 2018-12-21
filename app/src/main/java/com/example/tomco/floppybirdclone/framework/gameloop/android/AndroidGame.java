@@ -1,4 +1,4 @@
-package com.example.tomco.floppybirdclone.framework.android;
+package com.example.tomco.floppybirdclone.framework.gameloop.android;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,12 +11,12 @@ import android.os.PowerManager.WakeLock;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.example.tomco.floppybirdclone.framework.Audio;
-import com.example.tomco.floppybirdclone.framework.FileIO;
-import com.example.tomco.floppybirdclone.framework.Game;
-import com.example.tomco.floppybirdclone.framework.Graphics;
-import com.example.tomco.floppybirdclone.framework.Input;
-import com.example.tomco.floppybirdclone.framework.Screen;
+import com.example.tomco.floppybirdclone.framework.gameloop.Audio;
+import com.example.tomco.floppybirdclone.framework.gameloop.FileIO;
+import com.example.tomco.floppybirdclone.framework.gameloop.Game;
+import com.example.tomco.floppybirdclone.framework.gameloop.Graphics;
+import com.example.tomco.floppybirdclone.framework.gameloop.Input;
+import com.example.tomco.floppybirdclone.framework.gameloop.Screen;
 
 public abstract class AndroidGame extends Activity implements Game {
     AndroidFastRenderView renderView;

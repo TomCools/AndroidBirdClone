@@ -1,10 +1,10 @@
 package com.example.tomco.floppybirdclone;
 
-import com.example.tomco.floppybirdclone.framework.Game;
-import com.example.tomco.floppybirdclone.framework.Graphics;
-import com.example.tomco.floppybirdclone.framework.Input;
-import com.example.tomco.floppybirdclone.framework.Screen;
-import com.example.tomco.floppybirdclone.framework.android.AndroidGraphics;
+import com.example.tomco.floppybirdclone.framework.gameloop.Game;
+import com.example.tomco.floppybirdclone.framework.gameloop.Graphics;
+import com.example.tomco.floppybirdclone.framework.gameloop.Input;
+import com.example.tomco.floppybirdclone.framework.gameloop.Screen;
+import com.example.tomco.floppybirdclone.framework.gameloop.android.AndroidGraphics;
 
 import java.util.List;
 

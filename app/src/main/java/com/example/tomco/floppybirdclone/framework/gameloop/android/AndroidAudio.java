@@ -1,4 +1,4 @@
-package com.example.tomco.floppybirdclone.framework.android;
+package com.example.tomco.floppybirdclone.framework.gameloop.android;
 
 /**
  * Created by tomco on 6/12/2016.
@@ -12,9 +12,9 @@ import android.content.res.AssetManager;
 import android.media.AudioManager;
 import android.media.SoundPool;
 
-import com.example.tomco.floppybirdclone.framework.Audio;
-import com.example.tomco.floppybirdclone.framework.Music;
-import com.example.tomco.floppybirdclone.framework.Sound;
+import com.example.tomco.floppybirdclone.framework.gameloop.Audio;
+import com.example.tomco.floppybirdclone.framework.gameloop.Music;
+import com.example.tomco.floppybirdclone.framework.gameloop.Sound;
 
 
 public class AndroidAudio implements Audio {

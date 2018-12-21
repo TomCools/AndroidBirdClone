@@ -1,12 +1,11 @@
-package com.example.tomco.floppybirdclone.framework.android;
+package com.example.tomco.floppybirdclone.framework.gameloop.android;
 
 import java.util.List;
 
 import android.content.Context;
-import android.os.Build.VERSION;
 import android.view.View;
 
-import com.example.tomco.floppybirdclone.framework.Input;
+import com.example.tomco.floppybirdclone.framework.gameloop.Input;
 
 public class AndroidInput implements Input {
     TouchHandler touchHandler;

@@ -1,8 +1,4 @@
-package com.example.tomco.floppybirdclone.physics;
-
-/**
- * Created by tomco on 6/12/2016.
- */
+package com.example.tomco.floppybirdclone.framework.physics;
 
 public class BoundingBox {
     private int x;
@@ -31,5 +27,12 @@ public class BoundingBox {
 
     public int getHeight() {
         return height;
+    }
+
+    public boolean collidesWith(BoundingBox box) {
+        return x < box.getX() + box.getWidth() &&
+                x + width > box.getX() &&
+                y < box.getY() + box.getHeight() &&
+                y + height > box.getY();
     }
 }

@@ -2,13 +2,13 @@ package com.example.tomco.floppybirdclone.experiments;
 
 import android.graphics.Color;
 
-import com.example.tomco.floppybirdclone.framework.Game;
-import com.example.tomco.floppybirdclone.framework.Graphics;
-import com.example.tomco.floppybirdclone.framework.Input;
-import com.example.tomco.floppybirdclone.framework.Screen;
+import com.example.tomco.floppybirdclone.framework.gameloop.Game;
+import com.example.tomco.floppybirdclone.framework.gameloop.Graphics;
+import com.example.tomco.floppybirdclone.framework.gameloop.Input;
+import com.example.tomco.floppybirdclone.framework.gameloop.Screen;
 import com.example.tomco.floppybirdclone.items.Block;
-import com.example.tomco.floppybirdclone.physics.Forces;
-import com.example.tomco.floppybirdclone.physics.Vector2;
+import com.example.tomco.floppybirdclone.framework.physics.Forces;
+import com.example.tomco.floppybirdclone.framework.physics.Vector2;
 
 import java.util.ArrayList;
 import java.util.List;
